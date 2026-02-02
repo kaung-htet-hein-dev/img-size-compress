@@ -5,8 +5,8 @@ const program = new Command();
 const { spawn } = require('child_process');
 
 function startCompression(dirPath) {
-    const engine = spawn('./bin/engine', [dirPath]);
-
+    const binaryPath = path.join(__dirname, 'bin', 'engine');
+    const engine = spawn(binaryPath, [dirPath]);
     let resultData = '';
 
     engine.stdout.on('data', (data) => {
