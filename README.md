@@ -30,8 +30,9 @@ vcpkg install libvips
 
 ## Installation
 
+Install directly from GitHub:
 ```bash
-npm install -g bimg-size-compress
+npm install -g kaung-htet-hein-dev/img-size-compress#bimg-size-compress
 ```
 
 ## Usage
@@ -48,8 +49,12 @@ bimg-size-compress /path/to/images
 
 Or use with npx without installing:
 ```bash
-npx bimg-size-compress
-npx bimg-size-compress /path/to/images
+npx github:kaung-htet-hein-dev/img-size-compress#bimg-size-compress
+```
+
+To run on a specific directory:
+```bash
+npx github:kaung-htet-hein-dev/img-size-compress#bimg-size-compress /path/to/images
 ```
 
 The tool will display a table showing compression results for each file and total space saved.
