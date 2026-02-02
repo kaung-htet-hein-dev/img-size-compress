@@ -67,7 +67,7 @@ function renderTable(stats) {
     console.log(`TOTAL SPACE SAVED: ${formatBytes(totalSaved)} (${(totalSaved / 1024).toFixed(2)} KB)\n`);
 }
 
-program.name('img-size-compress').description('A CLI tool to compress image sizes').version('1.0.0')
+program.name('bimg-size-compress').description('Fast image compression using bimg/libvips').version('1.0.0')
     .argument('[dir]', 'Directory containing images to compress', process.cwd())
     .action((dir) => {
         const targetDir = path.resolve(dir);
