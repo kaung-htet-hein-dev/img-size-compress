@@ -15,7 +15,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-engine": "cd engine && go mod download && go build -o ../bin/engine main.go",
+    "prepublishOnly": "npm run build-engine"
   },
   "bin": {
     "img-size-compress": "./index.js"
