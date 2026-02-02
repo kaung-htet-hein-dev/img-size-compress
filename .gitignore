@@ -12,3 +12,4 @@ engine/engine.exe
 # OS specific files
 .DS_Store
 Thumbs.db
+/photos/
