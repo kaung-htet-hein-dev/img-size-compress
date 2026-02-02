@@ -1,0 +1,26 @@
+{
+  "name": "img-size-compress",
+  "version": "1.0.0",
+  "description": "reduce image file size",
+  "homepage": "https://github.com/kaung-htet-hein-dev/img-size-compress#readme",
+  "bugs": {
+    "url": "https://github.com/kaung-htet-hein-dev/img-size-compress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaung-htet-hein-dev/img-size-compress.git"
+  },
+  "license": "ISC",
+  "author": "Kaung Htet Hein",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "img-size-compress": "./index.js"
+  },
+  "dependencies": {
+    "commander": "^14.0.3"
+  }
+}

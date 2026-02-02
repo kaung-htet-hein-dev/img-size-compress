@@ -1,0 +1,14 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.env
+
+# Go
+bin/
+engine/engine
+engine/engine.exe
+
+# OS specific files
+.DS_Store
+Thumbs.db
