@@ -1,6 +1,6 @@
 {
   "name": "img-size-compress",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "reduce image file size",
   "homepage": "https://github.com/kaung-htet-hein-dev/img-size-compress#readme",
   "bugs": {
@@ -15,7 +15,10 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "build-engine": "cd engine && go mod download && go build -o ../bin/engine main.go",
+    "build-engine": "npm run build:darwin && npm run build:linux && npm run build:windows",
+    "build:darwin": "cd engine && GOOS=darwin GOARCH=amd64 go build -o ../bin/engine-darwin-amd64 main.go && GOOS=darwin GOARCH=arm64 go build -o ../bin/engine-darwin-arm64 main.go",
+    "build:linux": "cd engine && GOOS=linux GOARCH=amd64 go build -o ../bin/engine-linux-amd64 main.go && GOOS=linux GOARCH=arm64 go build -o ../bin/engine-linux-arm64 main.go",
+    "build:windows": "cd engine && GOOS=windows GOARCH=amd64 go build -o ../bin/engine-windows-amd64.exe main.go && GOOS=windows GOARCH=arm64 go build -o ../bin/engine-windows-arm64.exe main.go",
     "prepublishOnly": "npm run build-engine"
   },
   "bin": {

@@ -5,7 +5,7 @@ yarn-error.log*
 .env
 
 # Go
-# bin/
+bin/
 # engine/engine
 # engine/engine.exe
 
